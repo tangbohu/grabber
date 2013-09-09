@@ -1,5 +1,0 @@
-from urllib import urlopen 
-def readWeb(url):
-  html=urlopen(url)
-  return html.read()
-

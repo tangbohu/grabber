@@ -21,6 +21,7 @@ class LearingMachine():#threading.Thread):
         self.initPeople()
         self.initWeb()
         self.exit=False
+        self.pool=threadpool.ThreadPool(len(self.WebDict))
      
      
     def initPeople(self):
@@ -43,21 +44,17 @@ class LearingMachine():#threading.Thread):
            func=getattr(obj,item)
            webitem=func(self.interestAll) 
            self.WebDict.append(webitem)
+        
     
-
-  
-    
-    @staticmethod
-    def callable_func(obj):
+    def callable_func(self,obj):
         print 'a thread with function runs'
         obj.run()
         return obj
 
-    @staticmethod
-    def callback(request,result):
+    def callback(self,request,result):
          print 'requestID is',request.requestID,': fetch information is done ,I will classify these message'
          if  result:
-                 for user in LearingMachine.UserDict:
+                 for user in self.UserDict:
                      userMessage=''
                      found=False
                      for infomation in result.infoVar:
@@ -81,13 +78,15 @@ class LearingMachine():#threading.Thread):
        
   
     def fun(self):
-        print webdict
-        pool=threadpool.ThreadPool(len(webdict))
-        requests=threadpool.makeRequests(LearingMachine.callable_func,self.WebDict,LearingMachine.callback)
-        [pool.putRequest(req) for req in requests] 
-        pool.wait()
+        try:
+		print self.UserDict
+		requests=threadpool.makeRequests(self.callable_func,self.WebDict,self.callback)
+		[self.pool.putRequest(req) for req in requests] 
+		self.pool.wait()
+        except  KeyboardInterrupt:
+            print "!! Ctrl + C entered !!"
+            self.exit=True
    
-             
 
     def run(self):
       try:
@@ -105,11 +104,7 @@ class LearingMachine():#threading.Thread):
             print "!! Ctrl + C entered !!"
             self.exit=True
             #self.stop()
-            
 
-        
-
-    
 
 if __name__=='__main__':
    print 'my pid is,',os.getpid()

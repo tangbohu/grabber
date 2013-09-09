@@ -1,0 +1,51 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*- 
+import time
+import datetime
+import sys
+import info
+import threading
+import threadpool 
+
+class D():
+   def __init__(self,name):
+      self.count=1
+      self.name=name
+   def fun(self):
+      print self.name ,'is running'
+      self.count+=1
+          
+   @staticmethod
+   def run(obj): 
+         obj.fun()
+
+   @staticmethod
+   def runover(obj,obj1):
+      print obj1.name
+
+class dd():
+     def __init__(self,name):
+     	 self.count=1
+     	 self.name=name
+     def fun(self):
+     	 print self.name ,'is running'
+         self.count+=1
+
+class W(threading.Thread):
+   def __init__(self):
+      threading.Thread.__init__(self)
+      self.count=1
+      self.d=D('bohu')
+      self.b=D('Cassie')
+   def fun(self):
+     # pool =threadpool.ThreadPool(2)
+     # request=threadpool.makeRequests(D)
+      D.runover(self.b,self.b)
+          
+ 
+   def run(self):
+       
+         self.fun()
+if __name__=='__main__':
+    a=W()
+    a.start()

@@ -1,0 +1,154 @@
+my pid is, 3003
+东方财富网初始化成功
+中财网公司速递初始化成功
+同花顺实时解盘初始化成功
+同花顺公司资讯启动成功
+中财网研报启动成功
+同花顺投资机会初始化成功
+['dfcfw', 'zcw', 'ths', 'thscom', 'zcwyb', 'thstzjh']
+a thread with function runs
+a thread with function runs
+a thread with function runs
+ a thread with function runs
+a thread with function runs
+ a thread with function runs
+======================从 中财网公司速递 搜集信息了啊=======================
+======================从 中财网研报 搜集信息了啊=======================
+从 中财网公司速递 从 中财网研报读取信息成功 读取信息成功
+
+requestID is 40730208 : fetch information is done ,I will classify these message
+not found userful infomation
+requestID is 40734800 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺实时解盘 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c552079164.shtml
+从 同花顺实时解盘 读取信息成功
+requestID is 40730352 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从东方财富网搜集信息了啊=======================
+last updateTime is  2013-09-09 14:55:03
+从 东方财富网 读取信息成功
+requestID is 40730064 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺公司资讯 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c552077084.shtml
+error accur when get the list of the information from  同花顺公司资讯
+从 同花顺公司资讯 读取信息成功
+requestID is 40730496 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺投资机会 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c551935304.shtml
+从 同花顺投资机会 读取信息成功
+requestID is 40734944 : fetch information is done ,I will classify these message
+not found userful infomation
+总计耗时  10.0 秒
+一直运行好累，让我睡一会
+['dfcfw', 'zcw', 'ths', 'thscom', 'zcwyb', 'thstzjh']
+a thread with function runs
+a thread with function runs
+a thread with function runs
+a thread with function runs
+a thread with function runs
+a thread with function runs
+======================从 中财网公司速递 搜集信息了啊=======================
+======================从 中财网研报 搜集信息了啊=======================
+从 中财网公司速递 读取信息成功
+requestID is 43309680 : fetch information is done ,I will classify these message
+not found userful infomation
+从 中财网研报 读取信息成功
+requestID is 43310688 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺实时解盘 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c552079164.shtml
+从 同花顺实时解盘 读取信息成功
+requestID is 43307808 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从东方财富网搜集信息了啊=======================
+last updateTime is  2013-09-09 14:55:12
+从 东方财富网 读取信息成功
+requestID is 43310256 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺公司资讯 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c552077084.shtml
+error accur when get the list of the information from  同花顺公司资讯
+从 同花顺公司资讯 读取信息成功
+requestID is 43307664 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺投资机会 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c551935304.shtml
+从 同花顺投资机会 读取信息成功
+requestID is 41383624 : fetch information is done ,I will classify these message
+not found userful infomation
+总计耗时  9.0 秒
+一直运行好累，让我睡一会
+['dfcfw', 'zcw', 'ths', 'thscom', 'zcwyb', 'thstzjh']
+a thread with function runs
+a thread with function runs
+a thread with function runs
+a thread with function runs
+a thread with function runs
+a thread with function runs
+======================从 中财网公司速递 搜集信息了啊=======================
+从 中财网公司速递 读取信息成功
+requestID is 41403744 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 中财网研报 搜集信息了啊=======================
+从 中财网研报 读取信息成功
+requestID is 41403456 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺实时解盘 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c552079164.shtml
+从 同花顺实时解盘 读取信息成功
+requestID is 41403600 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从东方财富网搜集信息了啊=======================
+last updateTime is  2013-09-09 14:56:11
+从 东方财富网 读取信息成功
+requestID is 41404176 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺公司资讯 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c552077084.shtml
+error accur when get the list of the information from  同花顺公司资讯
+从 同花顺公司资讯 读取信息成功
+requestID is 41404608 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺投资机会 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c551935304.shtml
+从 同花顺投资机会 读取信息成功
+requestID is 41404104 : fetch information is done ,I will classify these message
+not found userful infomation
+总计耗时  9.0 秒
+一直运行好累，让我睡一会
+['dfcfw', 'zcw', 'ths', 'thscom', 'zcwyb', 'thstzjh']
+a thread with function runs
+a thread with function runs
+a thread with function runs
+a thread with function runs
+a thread with function runs
+a thread with function runs
+======================从 中财网公司速递 搜集信息了啊=======================
+从 中财网公司速递 读取信息成功
+requestID is 60952520 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 中财网研报 搜集信息了啊=======================
+从 中财网研报 读取信息成功
+requestID is 60957112 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺实时解盘 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c552079164.shtml
+从 同花顺实时解盘 读取信息成功
+requestID is 60956824 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从东方财富网搜集信息了啊=======================
+last updateTime is  2013-09-09 14:57:12
+从 东方财富网 读取信息成功
+requestID is 60952376 : fetch information is done ,I will classify these message
+not found userful infomation
+======================从 同花顺公司资讯 搜集信息了啊=======================
+======================从 同花顺投资机会 搜集信息了啊=======================
+link address is :  http://stock.10jqka.com.cn/20130909/c552077084.shtml
+error accur when get the list of the information from  同花顺公司资讯
+从 同花顺公司资讯 读取信息成功
+requestID is 60956968 : fetch information is done ,I will classify these message
+not found userful infomation
+link address is :  http

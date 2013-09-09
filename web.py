@@ -16,7 +16,10 @@ class Web():
       self.searchdict=searchdic
       self.fromweb=""
       self.updateTime=time.localtime()
-      #self.updateTime=time.strptime('2013-09-09 01:39:01','%Y-%m-%d %H:%M:%S')
+      t=time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+      truetime=t[0:11]
+      truetime+='00:00:00'
+      self.updateTime= time.strptime(truetime, '%Y-%m-%d %H:%M:%S')
    def setSearchDict(self,dic):
        self.searchdict=dic
    def addInfo(self,info):

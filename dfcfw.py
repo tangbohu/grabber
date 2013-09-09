@@ -4,6 +4,7 @@
 
 from web import Web
 from BeautifulSoup import BeautifulSoup
+import sys
 
 import urllib2
 import sys
@@ -12,8 +13,6 @@ import time
 import datetime
 from info import Info
 from readWeb import readWeb 
-
-
 
 
 class dfcfw(Web):

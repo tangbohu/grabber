@@ -67,7 +67,7 @@ class LearingMachine():#threading.Thread):
                                  userMessage+=intere.decode('utf-8')+' '
                           userMessage+="\n"
                           userMessage+=infomation.brief+'\n'+infomation.link+'\n\n'   
-                          userMessage+='                         collect by 伯虎大通投行 at ',time.strftime('%Y-%m-%d %H:%M:%S',self.updateTime)                            
+                          userMessage+='                         collect by 伯虎大通投行 at ',time.strftime('%Y-%m-%d %H:%M:%S',result.updateTime)                            
                                        
 	             if found:
 		             if send_mail(user.mail.decode('utf-8'),str("伯虎大通投行:"+result.fromweb).decode('utf-8'),userMessage):
@@ -110,6 +110,7 @@ class LearingMachine():#threading.Thread):
 
 if __name__=='__main__':
    print 'my pid is,',os.getpid()
+   print '时区为',time.localtime()
    a=LearingMachine()
    a.run()
 

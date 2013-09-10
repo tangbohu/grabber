@@ -66,7 +66,8 @@ class LearingMachine():#threading.Thread):
                                  found=True                               
                                  userMessage+=intere.decode('utf-8')+' '
                           userMessage+="\n"
-                          userMessage+=infomation.brief+'\n'+infomation.link+'\n\n'                                 
+                          userMessage+=infomation.brief+'\n'+infomation.link+'\n\n'   
+                          userMessage+='                         collect by 伯虎大通投行 at ',time.strftime('%Y-%m-%d %H:%M:%S',self.updateTime)                            
                                        
 	             if found:
 		             if send_mail(user.mail.decode('utf-8'),str("伯虎大通投行:"+result.fromweb).decode('utf-8'),userMessage):
@@ -93,13 +94,14 @@ class LearingMachine():#threading.Thread):
          while  not  self.exit:
             before_fun=time.mktime(time.localtime())
             self.fun()
+            print "(active worker threads: %i)" % (threading.activeCount()-1, )
             last=time.mktime(time.localtime())-before_fun
             print '总计耗时 ',last,'秒'
-            if last>60:
+            if last>120:
                pass
             else:
                print '一直运行好累，让我睡一会'
-               time.sleep(60-last)
+               time.sleep(120-last)
       except  KeyboardInterrupt:
             print "!! Ctrl + C entered !!"
             self.exit=True

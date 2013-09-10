@@ -26,11 +26,20 @@ class Web():
        self.infoVar.append(info)
    def clearInfo(self):
         self.infoVar[:]=[]
+
    def collectInfo(self):
        pass
+
+   def printLastUpdateTime(self):
+       print self.fromweb,' 上次更新的时间为:',time.strftime('%Y-%m-%d %H:%M:%S',self.updateTime)
   
    def run(self):
-       self.collectInfo()     
+       self.printLastUpdateTime()
+       self.clearInfo()
+       temp=time.localtime()
+       self.collectInfo()
+       self.updateTime=temp
+
 #not use
    @staticmethod
    def static_run(obj):

@@ -66,10 +66,12 @@ class LearingMachine():#threading.Thread):
                                  found=True                               
                                  userMessage+=intere.decode('utf-8')+' '
                           userMessage+="\n"
-                          userMessage+=infomation.brief+'\n'+infomation.link+'\n\n'   
-                          userMessage+='                         collect by 伯虎大通投行 at '
-                          userMessage+= str(time.strftime('%Y-%m-%d %H:%M:%S',result.updateTime)).decode('utf-8')     
-                          userMessage+='\n\n'                       
+                          userMessage+=infomation.brief+'\n'+infomation.link+'\n'   
+
+                          userMessage+=str('                         collect by 伯虎大通投行 at ').decode('utf-8')
+                          userMessage+= str(time.strftime('%Y-%m-%d %H:%M:%S',result.updateTime)).decode('utf-8')  
+                          userMessage+='\n'                                                   
+ 
                                        
 	             if found:
 		             if send_mail(user.mail.decode('utf-8'),str("伯虎大通投行:"+result.fromweb).decode('utf-8'),userMessage):

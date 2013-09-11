@@ -67,7 +67,7 @@ class LearingMachine():#threading.Thread):
                                  userMessage+=intere.decode('utf-8')+' '
                           userMessage+="\n"
                           userMessage+=infomation.brief+'\n'+infomation.link+'\n\n'   
-                          userMessage+='                         collect by 伯虎大通投行 at '
+                          userMessage+=str('                         collect by 伯虎大通投行 at ').decode('utf-8')
                           userMessage+= str(time.strftime('%Y-%m-%d %H:%M:%S',result.updateTime)).decode('utf-8')                            
                                        
 	             if found:
